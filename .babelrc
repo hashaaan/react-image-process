@@ -1,0 +1,86 @@
+{
+  "env": {
+    "bundle": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "modules": false,
+            "targets": {
+              "esmodules": false
+            },
+            "useBuiltIns": "usage"
+          }
+        ],
+        [
+          "@babel/preset-react"
+        ]
+      ],
+      "plugins": [
+        [
+          "@babel/plugin-transform-runtime",
+          {
+            "corejs": 2,
+            "helpers": true,
+            "regenerator": true,
+            "useESModules": false
+          }
+        ]
+      ]
+    },
+    "es5": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "modules": false,
+            "targets": {
+              "esmodules": false
+            },
+            "useBuiltIns": "usage"
+          }
+        ],
+        [
+          "@babel/preset-react"
+        ]
+      ],
+      "plugins": [
+        [
+          "@babel/plugin-transform-runtime",
+          {
+            "corejs": 2,
+            "helpers": true,
+            "regenerator": true,
+            "useESModules": false
+          }
+        ]
+      ]
+    },
+    "esnext": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "modules": false,
+            "targets": {
+              "esmodules": true
+            }
+          }
+        ],
+        [
+          "@babel/preset-react"
+        ]
+      ]
+    },
+    "test": {
+      "presets": [
+        [
+          "@babel/preset-env"
+        ],
+        [
+          "@babel/preset-react"
+        ]
+      ]
+    }
+  }
+}
